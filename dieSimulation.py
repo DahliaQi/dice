@@ -3,8 +3,9 @@ import random
 
 print ("Start throw a dice!")
 
-sides = raw_input("How many sides on your die? ")
+dice = int(raw_input("How many dice would you like to roll?"))
+sides = int(raw_input("How many sides on your die? "))
 
-die = random.randint(1,int(sides))
-
-print("The die shows " + str(die) + ". ")
+for number in range(1, dice + 1):
+	die = random.randint(1,sides)
+	print("The die shows " + str(die) + ". ")
